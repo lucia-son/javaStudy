@@ -1,5 +1,4 @@
 package Hiding;
-
 class Bday {
 
     //default (public,private) : 패키지 내에서 서로 접근 가능
@@ -8,12 +7,10 @@ class Bday {
     private int day;
     private int month;
     private int year;
-
     // 데이터는 숨겼지만 퍼블릭 메서드로 오픈해주기
     public int getDay() {
         return day;
     }
-
     public void setDay(int day) {
         if(month == 2) {
             if(day <= 1 || day > 28) {
@@ -40,7 +37,6 @@ class Bday {
     public void setYear(int year) {
         this.year = year;
     }
-
 }
 
 public class Birthday {
