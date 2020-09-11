@@ -13,10 +13,11 @@ public class StringTest {
         //true in that the same static pool is shared
 
         String str5 = new String("java");
+        System.out.println(System.identityHashCode(str5));
         String str6 = new String("good");
         str5 = str5.concat(str6);
         // Now that str5 points toward Combined String("javagood" not original String("java")
         // string"java" is immutable
-        System.out.println(str5);
+        System.out.println(System.identityHashCode(str5));
     }
 }
